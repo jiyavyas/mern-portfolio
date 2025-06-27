@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const nodemailer = require("nodemailer");
-const path =require('path')
-const fs = require("fs");
+//const path =require('path')
+//const fs = require("fs");
 
 // Load .env variables
 dotenv.config();
@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // static files
-app.use(express.static(path.join(__dirname, "../client/build")))
+//app.use(express.static(path.join(__dirname, "../client/build")))
 
 // POST route to handle email
 app.post("/send-email", async (req, res) => {
