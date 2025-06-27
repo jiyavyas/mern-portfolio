@@ -21,14 +21,13 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:8000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ templateParams: formData }),
-      });
-
+      const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/send-email`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ templateParams: formData }),
+});
       if (res.ok) {
         setStatus("✅ Email sent successfully!");
         setFormData({ from_name: "", to_name: "", message: "" });
