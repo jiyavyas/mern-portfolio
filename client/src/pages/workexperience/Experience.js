@@ -1,6 +1,7 @@
 import React from "react";
 import "./experience.css";
 import { SiReact } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
 import { Fade } from "react-awesome-reveal";
 import {
   VerticalTimeline,
@@ -33,8 +34,25 @@ const Experience = () => {
                 Pregrad Online Internship
               </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+               Built and deployed end-to-end MERN stack projects, fusing intuitive interfaces with robust backend logic to solve real-world problems with clean, scalable code.
+              </p>
+            </VerticalTimelineElement>
+             <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentArrowStyle={{ borderRight: "7px solid  white" }}
+              date="November 2023 - January 2024"
+              iconStyle={{ background: "#1e1e2c", color: "#fff" }}
+              icon={<FaJava />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                CORE JAVA Trainee
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+               SAMYAK IT SOLUTIONS
+              </h4>
+              <p>
+               Trained in Core Java at Samyak, gaining practical experience in key concepts like OOPs, exception handling, and file I/O.
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
